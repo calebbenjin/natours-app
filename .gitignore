@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/public
 /.pnp
 .pnp.js
 
@@ -11,11 +12,11 @@
 
 # production
 /build
-/public
 
 # misc
 .DS_Store
 *.pem
+/public
 
 # debug
 npm-debug.log*
