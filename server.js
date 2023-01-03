@@ -6,14 +6,18 @@ dotenv.config({ path: './config.env' });
 
 mongoose.set('strictQuery', true);
 
-const DB = process.env.DATABASE
+const DB = process.env.DATABASE;
 
-mongoose.connect(DB, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(con => {
-  console.log('DB connections successful')
-})
+mongoose
+  .connect(DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((con) => {
+    console.log('DB connections successful');
+  });
+
+
 
 // 5) Start Server
 const port = process.env.PORT || 8000;
