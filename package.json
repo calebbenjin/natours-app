@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "deleteDB": " node dev-data/data/import-json-data.js --delete",
+    "importDB": " node dev-data/data/import-json-data.js --import"
   },
   "author": "Calebbenjin",
   "license": "MIT",
